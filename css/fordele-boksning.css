@@ -1,0 +1,103 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: orange;
+    font-family: Arial, sans-serif;
+}
+
+
+
+header { /* her har jeg dekoreret min navbar's baggrund/box */
+    background-color: black; 
+    color: white; 
+    position: fixed; 
+    width: 100%; 
+    padding: 3%;
+}
+.unordered { /* her har jeg dekoreret teksten til min menu */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.listen {
+    padding: 5px;
+    position: relative; /* gør at jeg kan ændre på positionen uden at forstyrre layout */
+}
+
+.menu { /* her har jeg lavet min menu/nav bar */
+    color: white;
+    text-decoration: none; /* her har jeg fjernet den decorations "li/link" kommer med */
+    font-size: 150%;
+    padding: 15px 50px 10px 45px;
+    font-family: Arial, sans-serif;
+
+}
+.menu:hover { /* her har jeg lavet en hover funktion over min menu */
+    background-color:rgba(0, 0, 0, 0.5) ;
+    border-bottom: 4px solid orange; 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 20px;
+}
+.listen:hover .submenu { /* Her har jeg referet til second child submenu, så når jeg hover over listen vil den reagere og submenuen bliver vist som et block element */
+    display: block;
+}
+
+.submenu li { /* min liste der hører til submenu*/
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.submenu a { /* sys jeg lavede for mange classes så her har jeg brugt en class=submenu, også referet til mit anchor tag for at undgå at tag li med */
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.submenu a:hover { 
+    background-color: orange; /* givet bagrunds farve når du hover over en submenu */
+}
+
+/* her fra og ned begynder jeg på mit layout af min artikel starter med min header, også main til footer */
+
+#billed { /* her har jeg dekoreret ændret placering på mit biled */
+    width: 90%;
+    margin: 10% 5% 0% 5%;
+}
+
+#citat { /* givet id til mit citat, og placeret den under billedet ved hjælp af margin */
+   
+    margin: 0% 5% 0% 5%;
+    color: white;
+    font-size: 90%;
+}
+
+h1 { /* her har jeg centreret min overskrift og dekoreret den */
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    margin-top: 1%;
+    text-decoration: underline solid;
+}
+
+.brødtekst { /* min brødtekst placeret den i midten ved hjælp af margin, og padding for at lave lunser/white-space */
+    margin: 0% 5% 0% 20%;
+    padding: 20px;
+    max-width: 800px;
+    color: white;
+    background-color: orange;
+}
+
+#bunden { /* ville gerne have lidt mere mellemrum fra teksten til bunden */
+    margin-bottom: 5%;
+}

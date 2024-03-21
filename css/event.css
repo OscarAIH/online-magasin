@@ -1,0 +1,130 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+header { /* her har jeg dekoreret min navbar's baggrund/box */
+    background-color: black; 
+    color: white; 
+    position: fixed; 
+    width: 100%; 
+    padding: 3%;
+}
+.unordered { /* her har jeg dekoreret teksten til min menu */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.listen {
+    padding: 5px;
+    position: relative; /* gør at jeg kan ændre på positionen uden at forstyrre layout */
+}
+
+.menu { /* her har jeg lavet min menu/nav bar */
+    color: white;
+    text-decoration: none; /* her har jeg fjernet den decorations "li/link" kommer med */
+    font-size: 150%;
+    padding: 15px 50px 10px 45px;
+    font-family: Arial, sans-serif;
+
+}
+.menu:hover { /* her har jeg lavet en hover funktion over min menu */
+    background-color:rgba(0, 0, 0, 0.5) ;
+    border-bottom: 4px solid orange; 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 20px;
+}
+.listen:hover .submenu { /* Her har jeg referet til second child submenu, så når jeg hover over listen vil den reagere og submenuen bliver vist som et block element */
+    display: block;
+}
+
+.submenu li { /* min liste der hører til submenu*/
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.submenu a { /* sys jeg lavede for mange classes så her har jeg brugt en class=submenu, også referet til mit anchor tag for at undgå at tag li med */
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.submenu a:hover { 
+    background-color: orange; /* givet bagrunds farve når du hover over en submenu */
+}
+/* alt over denne kommentar er for navbar */
+
+/*nu vil jeg arbejde på at billederne kan sidde hvor jeg ønsker, til venstre og højre */
+
+aside {
+    height: 100%; /* ønsker at højden fylder hele siden, og at width kan ændres baseret på hvad jeg ønsker imellem billederne */
+    vertical-align: top;
+}
+
+#left { /* id til billedet på venstre side, givet den float: left så den kan blive på venstre side */
+    float: left;
+}
+
+#right { /* id til billedet på højre side, givet den float: right så den kan blive på højre side */
+    float: right;
+}
+
+
+.knap { /* her har jeg mine knapper til mine forskellige søge metoder, har leget lidt med dem for at få den rette afstand */
+    justify-content: space-between;
+    padding: 0 4%;
+    margin: 10% 2% 3% 0;
+    background-color: #777;
+    color: white;
+}
+
+#results { /* id til mine resultater så jeg kan dekorer og rediggere den hen hvor jeg vil */
+    font-size: 200%;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+.event { /* her har jeg stylet mine events baggrund */
+    background-color: orange;
+    margin-bottom: 2%;
+    color: white;
+    padding: 1%;
+    border: 1px solid black;
+    
+}
+
+.tilmeld { /* her har jeg stylet min tilmeld knap */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    float: right;
+    padding: 0.5% 5%;
+    margin: 2%;
+    font-size: 18px;
+}
+
+.eventPNG { /* her har jeg en class til billederne, så de alle kan blive samme størrelse */
+    width: 15%;
+}
+
+.overskrift { /* min event overskrift */
+    margin: 0.1%;
+    padding: 0;
+}
+
+h2 { /* min underskrift til events */
+    font-size: 200%;
+}
+
