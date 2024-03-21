@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BokseVerdenen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="description" content="Tilmeld dig Lokale Bokse begivenheder, Opdag hemmelighederne bag Boksning Historie, stjerner, resultater, højdepunkter og mere!">
+    <meta name="keywords" content="boksning,boxing,nyheder,news,events,tilmelding af events,highlights">
+    <meta name="geo.region" content="dk">
+
+    
+</head>
+<body>
+    <header> <!-- Semantisk tag jeg har brugt header, fordi jeg ved jeg vil arbejde i toppen af min hjemmeside med min navbar-->
+        <nav> <!-- Her har jeg lavet det semantiske tag nav, for at indikere jeg laver min navigations bar-->
+          <ul class="unordered"> 
+            <li class="listen"> <!-- lavet en class (listen) for at kunne tag om alle lister der skal være under mine hovedmenuer-->
+                <a class="menu" href="index.html">Hjem</a> <!-- lavet et link til min forside & lavet en class til alle hovedmenuer-->
+            </li>
+            <li class="listen"> 
+                <a class="menu" href="#">Boksning</a>
+                <ul class="submenu">
+                    <li><a href="#">Træning</a></li>
+                    <li><a href="#">Lokale Bokseklubber</a></li>
+                    <li><a href="#">Danske Amatør boksere</a></li>
+                    <li><a href="#">Professionelle boksere</a></li>
+                </ul>
+            </li>
+            <li class="listen">
+                <a class="menu" href="event.html">Begivenheder</a> <!-- siden jeg kun har en side ved begivenheder, kan du klikke på begivenheder for at komme direkte ind-->
+               <ul class="submenu">
+                <li><a href="event.html">Lokale Boksetævner</a></li> <!-- Her har jeg linket min underside til anchoret lokale bokse stævner-->
+                <li><a href="#">Professionelle boksekampe</a></li>
+               </ul>
+            
+            </li>
+            <li class="listen">
+                <a class="menu" href="fordele-boksning.html">Udforsk</a> <!-- siden jeg kun har en side ved udforsk, kan du klikke på udforsk for at komme direkte ind-->
+                <ul class="submenu">
+                    <li><a href="fordele-boksning.html">Fordele ved boksning</a></li> <!-- her har jeg linket til artiklen fordele ved boksning-->
+                    <li><a href="#">Nyheder</a></li>
+                    <li><a href="#">Højdepunkter</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Tips og tricks</a></li>
+                </ul>
+            
+            </li>
+                <li class="listen">
+                    <a class="menu" href="#">Historie</a>
+                <ul class="submenu">
+                    <li><a href="#">Boksestjerner</a></li>
+                    <li><a href="#">Historien bag boksning</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main> <!-- Her har jeg lavet min mid sektion som jeg har kaldt for main, fordi det fylder hele min hjemmeside-->
+            <aside class="billeder">
+                <img src="img/serious.avif" alt="boxing">
+                <img src="img/happy.avif" alt="breaking-news">
+                <img src="img/focused.avif" alt="results">
+            </aside>
+      </main>
+<!-- Her har jeg brugt det semantiske tag footer, for at indikere jeg går igang med at lave de elementer/indhold jeg skal have i bunden-->
+      <footer> 
+        <article>
+            <h1 class="BokseVerdenen">BokseVerdenen</h1>
+          <p class="brødtekst">Tilmeld dig Lokale Bokse begivenheder</p>
+          <p class="brødtekst">Opdag hemmelighederne bag Boksning</p>
+          <p class="brødtekst">Historie, stjerner, resultater, højdepunkter</p>
+          <p class="brødtekst">og mere!</p>
+          </article>
+      </footer>
+</body>
+</html>

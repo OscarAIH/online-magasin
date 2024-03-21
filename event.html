@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokale Boksestævner</title>
+    <link rel="stylesheet" type="text/css" href="css/event.css">
+    <meta name="description" content="Se din første eller næste Amatør boksekamp i Danmark, besøg hjemmesiden og tilmeld dig">
+    <meta name="keywords" content="boksning,boxing,nyheder,news,events,tilmelding af events">
+    <meta name="geo.region" content="dk">
+
+</head>
+
+<body>
+    <header> <!-- Semantisk tag jeg har brugt header, fordi jeg ved jeg vil arbejde i toppen af min hjemmeside med min navbar-->
+        <nav> <!-- Her har jeg lavet det semantiske tag nav, for at indikere jeg laver min navigations bar-->
+          <ul class="unordered"> 
+            <li class="listen"> <!-- lavet en class (listen) for at kunne tag om alle lister der skal være under mine hovedmenuer-->
+                <a class="menu" href="index.html">Hjem</a> <!-- lavet et link til min forside & lavet en class til alle hovedmenuer-->
+            </li>
+            <li class="listen"> 
+                <a class="menu" href="#">Boksning</a>
+                <ul class="submenu">
+                    <li><a href="#">Træning</a></li>
+                    <li><a href="#">Lokale Bokseklubber</a></li>
+                    <li><a href="#">Danske Amatør boksere</a></li>
+                    <li><a href="#">Professionelle boksere</a></li>
+                </ul>
+            </li>
+            <li class="listen">
+                <a class="menu" href="event.html">Begivenheder</a> <!-- siden jeg kun har en side ved begivenheder, kan du klikke på begivenheder for at komme direkte ind-->
+               <ul class="submenu">
+                <li><a href="event.html">Lokale Boksetævner</a></li> <!-- Her har jeg linket min underside til anchoret lokale bokse stævner-->
+                <li><a href="#">Professionelle boksekampe</a></li>
+               </ul>
+            
+            </li>
+            <li class="listen">
+                <a class="menu" href="fordele-boksning.html">Udforsk</a> <!-- siden jeg kun har en side ved udforsk, kan du klikke på udforsk for at komme direkte ind-->
+                <ul class="submenu">
+                    <li><a href="fordele-boksning.html">Fordele ved boksning</a></li> <!-- her har jeg linket til artiklen fordele ved boksning-->
+                    <li><a href="#">Nyheder</a></li>
+                    <li><a href="#">Højdepunkter</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Tips og tricks</a></li>
+                </ul>
+            
+            </li>
+                <li class="listen">
+                    <a class="menu" href="#">Historie</a>
+                <ul class="submenu">
+                    <li><a href="#">Boksestjerner</a></li>
+                    <li><a href="#">Historien bag boksning</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+
+      <main> 
+        <aside>
+            <img id="left" src="img/article2-left.webp" alt="event">
+            <img id="right" src="img/article2-right.webp" alt="stævne">
+            </aside>
+
+        <section>
+             <article>
+                 <button class="knap" >Kommmune</button>
+                 <button class="knap" >A-Å</button>
+                 <button class="knap" >Søg</button>
+                 <h1 id="results">Resultater</h1>
+             </article>
+        </section>
+
+      </main>
+
+      <footer> 
+        <article class="event">
+            <img class="eventPNG" src="img/event-1.webp" alt="event1">
+            <button class="tilmeld"><strong>Tilmeld</strong></button>
+            <h2>Fight Night</h2>
+            <h1 class="overskrift">Marselisborghallen Aarhus 17. Marts kl 20:00</h1>
+            <p class="underrubrik">Oplev spændende amatør boksekampe på vores kommende event! Lokale talenter kæmper for sejr i ringen.
+                 Køb dine billetter nu og vær en del af den actionfyldte aften!</p>
+          </article>
+
+          <article class="event">
+            <img class="eventPNG" src="img/event2.webp" alt="event2">
+            <button class="tilmeld"><strong>Tilmeld</strong></button>
+            <h2>Nordiske Mesterskaber</h2>
+            <h1 class="overskrift">Sportscenter Herning 22. Marts kl 20:00</h1>
+            <p class="underrubrik"> Danmarks Bokse-Union byder vores nordiske venner og hele boksedanmark velkommen til en forrygende bokseweekend, som løber af stablen i Sportscenter Herning</p>
+          </article>
+
+          <article class="event">
+            <img class="eventPNG" src="img/event3.webp" alt="event3">
+            <button class="tilmeld"><strong>Tilmeld</strong></button>
+            <h1 class="overskrift">FAK-Boksestævne 9 marts kl 19:30</h1>
+            <p class="underrubrik"> Internationalt boksestævne i nye rammer. F.A.K. og udvalgte Aarhus boksere møder et stærkt tysk hold i årets første storstæve i Marselisborghallen. Boksningen er tilbage i Aarhus. Køb billeterne nu. Sidste gang var der udsolgt!</p>
+          </article>
+      </footer>
+</body>
+</html>
